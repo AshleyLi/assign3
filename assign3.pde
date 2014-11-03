@@ -199,8 +199,8 @@ void mousePressed(){
     // --------------- put you code here -------  
     clickCount++; 
   
-    int col = (mouseX - ix) / SLOT_SIZE;
-    int row = (mouseY - iy) / SLOT_SIZE;
+    int col = int((mouseX - ix) / SLOT_SIZE);
+    int row = int((mouseY - iy) / SLOT_SIZE);
 
     if(slot[col][row] == SLOT_BOMB){
       gameState = GAME_LOSE;
