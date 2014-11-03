@@ -121,7 +121,7 @@ void setBombs(){
     int location = washcard[i];
     int bombX = location % 4 ;
     int bombY = location / 4;
-    println("bomb" + i + " location = " + bombX + "," + bombY);
+    //println("bomb" + i + " location = " + bombX + "," + bombY);
     slot[bombX][bombY] = SLOT_BOMB;
   }
   // ---------------------------------------
