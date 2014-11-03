@@ -90,7 +90,24 @@ void draw(){
 
 int countNeighborBombs(int col,int row){
   // -------------- Requirement B ---------
-  return 0;
+    int bombs = 0;
+  
+  for (int i = 0 ; i < 4 ; i++){
+    for (int j = 0 ; j < 4 ; j++){
+      
+      if( i+1 == col || i-1 == col || i == col ){
+        if( j+1 == row || j-1 == row || j == row ){
+          
+          if(slot[i][j] == SLOT_BOMB){
+            bombs++;
+          }
+        }
+      }
+      
+    }
+  }
+  
+  return bombs;
 }
 void setBombs(){
   // initial slot
