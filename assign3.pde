@@ -89,12 +89,9 @@ void draw(){
 }
 
 int countNeighborBombs(int col,int row){
-  // -------------- Requirement B --------
- 
-  
-  return count;
+  // -------------- Requirement B ---------
+  return 0;
 }
-
 void setBombs(){
   // initial slot
   for (int col=0; col < nSlot; col++){
